@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PJ7 Work-from-Home Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>PJ7 Dashboard</h1>
+
+  <section>
+    <h2>📌 Earning Platforms</h2>
+    <div class="buttons">
+      <a href="https://www.gotranscript.com/" target="_blank">GoTranscript</a>
+      <a href="https://www.usertesting.com/" target="_blank">UserTesting</a>
+      <a href="https://www.clickworker.com/" target="_blank">Clickworker</a>
+      <a href="https://trymata.com/" target="_blank">Trymata</a>
+      <a href="https://www.rev.com/" target="_blank">Rev</a>
+      <a href="https://www.remotasks.com/" target="_blank">Remotasks</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>📊 My Earnings This Week (ZAR)</h2>
+    <canvas id="earningsChart"></canvas>
+    <div class="input-grid">
+      <input type="number" placeholder="Mon" id="mon" />
+      <input type="number" placeholder="Tue" id="tue" />
+      <input type="number" placeholder="Wed" id="wed" />
+      <input type="number" placeholder="Thu" id="thu" />
+      <input type="number" placeholder="Fri" id="fri" />
+      <input type="number" placeholder="Sat" id="sat" />
+      <input type="number" placeholder="Sun" id="sun" />
+      <button onclick="updateChart()">Update Chart</button>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
